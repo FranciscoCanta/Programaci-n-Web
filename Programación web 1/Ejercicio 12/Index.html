@@ -23,6 +23,16 @@
             box-sizing: border-box;
         }
 
+        .opciones-de-busqueda{
+            width: 80%;
+            height: 90px;
+            position: relative;
+            background-color: brown;
+            left: 140px;
+            /* top: -70px; */
+            justify-content: center;
+        }
+
         a{
             font-family: Arial, Helvetica, sans-serif;
             font-size: 17px;
@@ -35,6 +45,12 @@
             text-decoration: none;
             color: white;
         }
+
+        .centrar{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
     </style>
 
 </head>
@@ -45,15 +61,33 @@
         <img src="./Images/logo-nav.png" alt="La imágen no se puede mostrar" height="40px" style="position: relative; top: 10px; left: 10px;"> 
    </div>
    
+   <!--Barra de menu-->
     <a href="index.html" class="inicio"> Inicio </a>
     <a href="" style="position: relative; left: 168px; top: -72px; text-decoration: none; color: white;">Información</a>
     <a href="" style="position: relative; left: 180px; top: -72px; text-decoration: none; color: white;">Acceso</a>
     <a href="" style="position: relative; left: 192px; top: -72px; text-decoration: none; color: white;">Galería</a>
     <a href="" style="position: relative; left: 202px; top: -72px; text-decoration: none; color: white;">Turismo</a>
     <a href="" style="position: relative; left: 212px; top: -72px; text-decoration: none; color: white;">Contactanos</a>
+    <!--Imágenes de la barra-->
     <img src="./Images/pngwing.com.png" style="position: relative; left: 850px; top: -62px; width: 33px; height: 33px;" alt="">
     <img src="./Images/facebook.com.png" alt="La imágen no se puede mostrar" height="40px" style="position: relative; top: -59px; left: 850px;">
-    <img src="./Images/ALOJAMIENTO.png" alt="La imágen no se puede mostrar" style="position: relative; left: 10%; top: -60px;">
+    
+    <div class="centrar">
+        <img src="./Images/ALOJAMIENTO.png" alt="La imágen no se puede mostrar" style="position: relative ; top: -60px;">
+    </div>
+    
+    <!--Opciones de busqueda-->
+    <div class="opciones-de-busqueda" style="position: relative; top: -60px;">  </div>
+    <h4        style="position: relative;left: 860px; top: -134px;font-family: Arial, Helvetica, sans-serif;color: burlywood;">Mostrar en:</h4>
+    
+    <!-- <div>
+        <a href="" style="position: relative;left: 980px; top: -174px;font-family: Arial, Helvetica, sans-serif;color: black; background-color: burlywood;  text-decoration: none;">Tarjetas</a>
+    </div> -->
 
+    <div style="width: 30%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <button id="ButtonOpcionAloj" onclick="CambiarModoVisualizacion2()">Tarjetas</button>
+        </div>
+
+    <a href="" style="position: relative;left: 1100px; top: -194px;font-family: Arial, Helvetica, sans-serif;color: black; background-color: burlywood; text-decoration: none; ">Tabla</a>
 </body>
 </html>
